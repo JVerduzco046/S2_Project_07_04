@@ -32,8 +32,16 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background: white;
+    background: #6cd1ee;
 
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
 }
 
 ul.dmenu {
@@ -45,18 +53,24 @@ ul.dmenu:hover {
     display: block;
 }
 
+
+
 ul.mainmenu>li {
     float: left;
     width: 16%;
     position: relative;
 }
 
+ul.dmenu li:hover,
+ul.dmenu li:active {
+    background-color: black;
+}
 
 ul.dmenu {
     width: 100%;
     box-shadow: rgb(51, 51, 51) -5px 5px 15px;
     position: absolute;
-    background-color: rgb(49, 182, 182);
+    background-color: #b3e7f7;
 }
 
 #img1 {
@@ -72,7 +86,16 @@ ul.dmenu {
     -webkit-order: 98;
     float: left;
     margin: 5% 5% 5% 5%;
-    flex: 2 10;
+    flex: 3 2 400px;
+    font-size: 1.09em;
+
+}
+
+.mart p {
+    background-color: #a3edf8;
+    border-radius: 30px;
+    margin-top: 2%;
+    padding-left: 2%
 }
 
 .rad {
@@ -84,6 +107,8 @@ ul.dmenu {
     float: left;
     margin: 5% 5% 5% 5%;
     flex: 10 2;
+    background-color: #a3edf8;
+    font-size: .89em;
 }
 
 footer {
@@ -107,17 +132,98 @@ body:after {
     clear: both;
 }
 
+#navi {
+    display: none;
+}
+
 /* Media Styles  */
 
 
 @media only screen and (max-width:480px) {
+    body {
+        max-width: 480px;
+    }
+
+
     .rad {
         display: none;
     }
 
     .mart {
-        width: 80%;
-        margin: 5% 5% 5% 5%;
-        text-align: center
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
+
+    a#navi {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    a#navi:hover+ul,
+    nav ul:hover {
+        display: block;
+    }
+
+    #img1 {
+        display: none;
+    }
+
+    ul.dmenu {
+        display: none;
+    }
+
+    a.dmenuTitle:hover+ul.dmenu,
+    ul.dmenu:hover {
+        display: block;
+    }
+
+    nav ul li {
+        text-align: left;
+    }
+
+
+    ul.mainmenu>li {
+        float: left;
+        width: 100%;
+        position: relative;
+    }
+
+
+    ul.dmenu {
+        width: 100%;
+        box-shadow: rgb(51, 51, 51) -5px 5px 15px;
+        position: relative;
+        background-color: #b3e7f7;
+    }
+
+    footer p {
+        width: 100%;
+        float: left;
+        display: inline-block;
+    }
+
+    footer address {
+        width: 480px;
+        float: left;
+        display: inline-block;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .rad {
+        display: none;
+    }
+
+    .mart {
+        max-width: 460px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
