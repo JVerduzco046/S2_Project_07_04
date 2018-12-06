@@ -44,6 +44,7 @@ nav ul li a {
     color: white;
 }
 
+/* Dropdown Menu can olny be displayed by hovering over the main links with the ide ways arrows */
 ul.dmenu {
     display: none;
 }
@@ -126,6 +127,7 @@ footer p {
     text-align: center;
 }
 
+/* Prevent Container collapse. Background color was not covering whole body content */
 body:after {
     display: table;
     content: "";
@@ -137,7 +139,7 @@ body:after {
 }
 
 /* Media Styles  */
-
+/* Media Styles for Mobile Device removed nav and repleced with a nav icon instead. Removed the Rad(right aside description) class  from view. Also removed image since it was clashing too much with the rest of the website */
 
 @media only screen and (max-width:480px) {
     body {
